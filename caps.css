@@ -1,0 +1,266 @@
+
+        :root{
+
+  /* Default font for headlines, headings, bylines, etc. */
+  --hed-font-default: 'Barlow', sans-serif; 
+  /* Font used for headlines if print design uses serif font */
+  --hed-font-serif: 'Faustina', serif;
+  /* Default font for body text */
+  --body-font: 'PT Serif', serif;
+}
+
+.mag-navbar{
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+height: 7vh;
+background-color: #272727 ;
+padding: 1vh 0;
+box-shadow: 1px 2px 1px;
+z-index: 1;
+}
+.nbn-logo-nav{
+  margin-left: 1vw;
+  height: 100%;
+ 
+}
+.nbn-path{
+  fill: white;
+  transition: fill 1s ease;
+}
+.homepage-link:hover .nbn-path{
+  fill: #B6ACD1
+}
+
+.article {
+background-color: black; 
+padding: 20px;
+}
+
+.line {
+border-left: 10px solid #481669;
+height: 100%;
+margin-left: 10%;
+margin-top: 5%;
+}
+
+/* HED, DEK, BYLINE - feel free to play with this! */
+
+body {
+  margin: 0px;
+}
+
+.header {
+  height: 100vh;
+  padding-bottom: 0;
+  width: 100%;
+  background-size: cover;
+  margin-top: 8vh;
+  position: relative;
+  background-image: url('https://northbynorthwestern.com/content/images/2022/04/CollageTransparent.png');
+} 
+
+.part1 {
+  margin: auto;
+  margin-bottom: 4%;
+  display: block;
+}
+
+.part2, .part3, .part4, .part5 {
+margin-left: -12%;
+margin-bottom: 4%;
+}
+
+.text {
+  position: relative;
+  padding: 10px;
+  width: 45%;
+  margin-left: 30%;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'PT Serif', serif;
+  color: white;
+}
+.text p{
+  padding: .75em;
+}
+
+.sections {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0;
+    margin-left: 70%;
+    font-family: 'PT Serif', serif;
+    color: white;
+}
+
+blockquote{
+  margin-left: -10%;
+  width: 120%;
+  color: white;
+  background-color: #3d1669;
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+blockquote h2{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+        
+blockquote p{
+  font-weight: 400;
+}
+
+.article-top-content {
+  height: 100%;
+  text-align: center;
+  position: relative;
+  padding: 15% 0;
+}
+
+
+.article-hed {
+/* replace "default" with "serif" if article uses a serif font in the hed */
+font-family: var(--hed-font-default);
+font-size: 5em;
+margin: auto;
+margin-bottom: 0;
+font-weight: 600;
+padding: 20px;
+width: 40%;
+background-color:  #3d1669;
+color: white;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+}
+
+.article-hed-2 {
+/* replace "default" with "serif" if article uses a serif font in the hed */
+font-family: var(--hed-font-default);
+font-size: 2.25em;
+margin: auto;
+margin-top: 0%;
+margin-bottom: 0;
+font-weight: 300;
+padding-top: 0;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+width: 40%;
+background-color: #3d1669;
+color: white;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 25px;
+}
+
+.article-dek {
+font-family: var(--hed-font-default);
+margin-top: 0;
+font-size: 1.6em;
+margin-bottom: 0;
+font-weight: 500;
+}
+        
+.article-byline {
+font-family: var(--hed-font-default);
+font-weight: 400;
+margin-top: 0.5em;
+font-size: 1.25em;
+color: white;
+background-color: #3d1669;
+width: 20%;
+margin:auto;
+padding: 8px;
+border-radius: 25px;
+}
+.byline-link {
+color: #9F80CC;
+transition: color .75s ease;
+}
+
+.byline-link-2 {
+color: white;
+transition: color .75s ease;
+}
+
+.byline-link-2:hover {
+color: #4e2a84;
+}
+.byline-link:hover {
+color: #4e2a84;
+}
+
+.nbn-logo-nav{
+  margin-left: 1vw;
+  height: 100%;
+}
+
+.nbn-path{
+  fill: white;
+  transition: fill 1s ease;
+}
+
+.homepage-link:hover .nbn-path{
+  fill: #B6ACD1
+}
+
+@media screen and (max-width: 700px){
+  .mag-navbar{
+      height: 5vh;
+  }
+    
+  iframe.instagram-media {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: auto !important;
+}
+  
+  .article-byline{
+      font-size: .70em;
+      width: 40%;
+  }
+  .text {
+      width: 60vw;
+      margin: 15vw;
+      font-size: 13px;
+  }
+
+  .header {
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  .line {
+    background-color: unset;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  blockquote {
+    width: 90%;
+    font-size: .2em;
+    margin: auto;
+  }
+
+  blockquote p{
+    font-size: 6em;
+  }
+
+  .article-hed {
+    font-size: 2em;
+    width: 60%;
+  }
+
+  .article-hed-2 {
+    font-size: 1em;
+    width: 60%;
+  }
+
+}
